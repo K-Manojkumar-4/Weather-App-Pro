@@ -303,7 +303,7 @@ See the [LICENSE](LICENSE) file for full details.
 **Manoj Kumar K**
 
 - GitHub: [K-Manojkumar-4](https://github.com/K-Manojkumar-4)
-- Project Link: [https://github.com/K-Manojkumar-4/WeatherPro](https://github.com/K-Manojkumar-4/WeatherPro)
+- Project Link: [https://github.com/K-Manojkumar-4/WeatherPro](https://github.com/K-Manojkumar-4/Weather-App-Pro)
 
 ---
 
