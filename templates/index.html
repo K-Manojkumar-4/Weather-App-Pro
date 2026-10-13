@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+
+    <header class="header">
+      <h1 class="logo">Weather<span>Pro</span></h1>
+      <p class="tagline">real-time weather & forecast</p>
+    </header>
+
+    <section class="search-section">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+        <button id="searchBtn" aria-label="search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="unit-toggle">
+        <button id="unitC" class="unit-btn active" data-unit="metric">°C</button>
+        <button id="unitF" class="unit-btn" data-unit="imperial">°F</button>
+      </div>
+    </section>
+
+    <div id="status" class="status hidden"></div>
+
+    <section id="currentCard" class="card current-card hidden">
+      <div class="current-top">
+        <div>
+          <h2 id="location" class="location"></h2>
+          <p id="description" class="description"></p>
+        </div>
+        <img id="weatherIcon" class="weather-icon" alt="">
+      </div>
+
+      <div class="temp-row">
+        <span id="temp" class="temp"></span>
+        <span id="feelsLike" class="feels-like"></span>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail">
+          <span class="detail-label">Humidity</span>
+          <span id="humidity" class="detail-value"></span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind</span>
+          <span id="wind" class="detail-value"></span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Pressure</span>
+          <span id="pressure" class="detail-value"></span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Sunrise</span>
+          <span id="sunrise" class="detail-value"></span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Sunset</span>
+          <span id="sunset" class="detail-value"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="hourlySection" class="section hidden">
+      <h3 class="section-title">Hourly forecast</h3>
+      <div id="hourlyContainer" class="hourly-scroll"></div>
+    </section>
+
+    <section id="dailySection" class="section hidden">
+      <h3 class="section-title">5-day forecast</h3>
+      <div id="dailyContainer" class="daily-grid"></div>
+    </section>
+
+    <footer class="footer">
+      <p>Powered by OpenWeatherMap</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
