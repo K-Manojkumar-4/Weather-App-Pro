@@ -132,7 +132,7 @@ Follow these steps to run WeatherPro on your computer.
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/K-Manojkumar-4/WeatherPro.git
+git clone https://github.com/K-Manojkumar-4/Weather-App-Pro.git
 cd WeatherPro
 ```
 
