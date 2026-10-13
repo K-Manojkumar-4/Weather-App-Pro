@@ -258,25 +258,6 @@ GET /api/weather?city=Chennai&units=metric
 
 ---
 
-## 📸 Screenshots
-
-> After running the app, you can add screenshots here to make the README even better.
-
-```
-assets/
-├── screenshot-current.png     # Current weather card
-├── screenshot-hourly.png      # Hourly forecast scroll
-└── screenshot-daily.png       # 5-day forecast grid
-```
-
-<!-- Uncomment and add your images later
-![Current Weather](assets/screenshot-current.png)
-![Hourly Forecast](assets/screenshot-hourly.png)
-![5-Day Forecast](assets/screenshot-daily.png)
--->
-
----
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
